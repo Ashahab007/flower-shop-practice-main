@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sharing styles */
+
+/* Fonts */
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fixed-width {
+  max-width: 1200px;
+  /* width: 1200px; */
+}
+
+/* styles banner section start */
+.banner-section {
+  background-color: hsla(347, 74%, 61%, 0.109);
+}
+
+.banner-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  /* border: 1px solid; */
+}
+
+.banner-title-description {
+  color: hsla(0, 0%, 15%, 0.615);
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+.banner-image {
+  width: 800px;
+  height: 500px;
+  /* border: 1px solid; */
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 110px;
+  height: 40px;
+  background-color: #e55473;
+  color: aliceblue;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.title-description,
+.btn {
+  margin-top: 30px;
+}
+/* styles banner section end */
+
+/* styles feature flower start */
+
+.feature-flower-section {
+  margin: 150px auto;
+}
+
+.feature-flower-section .feature-flower-title,
+.title-description {
+  text-align: center;
+}
+
+.feature-flower-title {
+  font-size: 30px;
+}
+
+.feature-flower-section .title-description {
+  color: hsla(0, 0%, 15%, 0.615);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid; */
+  height: 400px;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.card-image img {
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid; */
+}
+
+.card-image-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-image-title a {
+  color: black;
+}
+
+.purple {
+  background-color: hsla(331, 67%, 39%, 0.169);
+}
+
+.blue {
+  background-color: hsla(183, 94%, 32%, 0.159);
+}
+
+.green {
+  background-color: hsla(90, 76%, 28%, 0.157);
+}
+/* styles feature flower end */
+
+/* Responsive design */
+
+@media screen and (max-width: 576px) {
+  .banner-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    /* border: 1px solid; */
+  }
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-top: 50px;
+  }
+}
