@@ -87,6 +87,7 @@
 
 .feature-flower-section {
   margin: 150px auto;
+  /* border: 1px solid; */
 }
 
 .feature-flower-section .feature-flower-title,
@@ -108,7 +109,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 1px solid; */
   height: 400px;
 }
 
@@ -152,10 +152,51 @@
 }
 /* styles feature flower end */
 
+/* styling delivery section start */
+
+.delivery-section {
+  border: 1px solid;
+  /* margin-top: 50px; */
+}
+
+.delivery-container {
+  border: 1px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+
+.bg-grey {
+  background-color: hsla(0, 0%, 15%, 0.059);
+}
+
+.delivery-icon {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  color: hsla(0, 0%, 15%, 0.803);
+  /* border: 1px solid; */
+}
+
+.delivery-icon img {
+  width: 35%;
+  height: 35%;
+}
+/* styling delivery section end */
+
+/* todo: problem in delivery responsive section. Due to problem margin top is taken 900px in responsive section. */
+
 /* Responsive design */
 
 @media screen and (max-width: 576px) {
-  .banner-container {
+  .banner-container,
+  .delivery-container {
     flex-direction: column;
     padding: 10px;
   }
@@ -166,11 +207,16 @@
     margin-top: 0px;
     /* border: 1px solid; */
   }
+
   .card-container {
     flex-direction: column;
   }
 
   .card {
     margin-top: 50px;
+  }
+
+  .delivery-section {
+    margin-top: 900px;
   }
 }
